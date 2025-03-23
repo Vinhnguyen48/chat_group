@@ -1,0 +1,27 @@
+{% extends 'base/base.html' %} {% block title %}Đăng ký - Vynex Chat{% endblock %} {% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}" />
+{% endblock %} {% block extra_js %}
+<script src="{{ url_for('static', filename='js/register.js') }}"></script>
+{% endblock %} {% block content %}
+<div class="home-container">
+  <div class="home-content">
+    <h1>Đăng ký tài khoản</h1>
+
+    <div class="input-group">
+      <label for="username">Tên đăng nhập:</label>
+      <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập của bạn..." required />
+    </div>
+
+    <div class="input-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Nhập email của bạn..." required />
+    </div>
+
+    <div class="input-group">
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" name="password" placeholder="Nhập mật khẩu của bạn..." required />
+    </div>
+    <button id="register-btn">Đăng ký</button>
+  </div>
+</div>
+{% endblock %}

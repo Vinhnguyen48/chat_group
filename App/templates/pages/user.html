@@ -1,0 +1,23 @@
+{% extendes 'base/base.html'%}
+{% block title %}Trang cá nhân{% endblock %}
+{% block extra_css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/user.css') }}" />
+{% endblock %}
+{% block content %}
+<div class="home-container">
+    <div class="home-content">
+        <h1>Trang cá nhân</h1>
+        <div class="input-group">
+            <label for="username">Tên đăng nhập:</label>
+            <input type="text" id="username" name="username" placeholder="Nhập tên đăng nhập của bạn..." />
+        </div>
+        <div class="input-group">
+            <label for="password">Mật khẩu:</label>
+            <input type="password" id="password" name="password" placeholder="Nhập mật khẩu của bạn..." />
+        </div>
+        <button>Đăng nhập</button>
+    </div>
+</div>
+
+{% endblock %}
+

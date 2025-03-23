@@ -1,0 +1,74 @@
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background: #cfcfcf;
+  }
+  /* Container của form */
+  .home-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+  }
+  
+  /* Tiêu đề */
+  .home-content h1 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Nhóm input */
+  .input-group {
+    text-align: left;
+    margin-bottom: 15px;
+  }
+  
+  /* Label */
+  .input-group label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #444;
+  }
+  
+  /* Input */
+  .input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+  
+  /* Hiệu ứng khi focus vào input */
+  .input-group input:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.5);
+  }
+  
+  /* Button */
+ .home-content button {
+    width: 100%;
+    padding: 12px;
+    background: #2575fc;
+    border: none;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+  }
+  
+  /* Hiệu ứng hover cho button */
+  button:hover {
+    background: #1a5ad7;
+  }

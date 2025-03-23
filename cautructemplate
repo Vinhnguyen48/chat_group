@@ -1,0 +1,53 @@
+Cấu trúc thư mục templates
+bash
+Copy
+Edit
+/project_root
+│── /templates
+│   │── /base
+│   │   │── base.html
+│   │   │── navbar.html
+│   │   │── footer.html
+│   │── /pages
+│   │   │── home.html
+│   │   │── about.html
+│   │   │── contact.html
+│   │── /auth
+│   │   │── login.html
+│   │   │── register.html
+│   │── /includes
+│   │   │── messages.html
+│   │   │── pagination.html
+2️⃣ Giải thích thư mục
+🔹 /base/
+base.html → Template gốc, chứa cấu trúc chung của trang (header, footer, sidebar…).
+navbar.html → Thanh điều hướng.
+footer.html → Chân trang.
+🔹 /pages/
+Chứa các trang nội dung chính như trang chủ (home.html), giới thiệu (about.html), liên hệ (contact.html).
+🔹 /auth/
+Chứa các template liên quan đến đăng nhập (login.html), đăng ký (register.html).
+🔹 /includes/
+messages.html → Hiển thị thông báo (success, error, warning…).
+pagination.html → Phân trang cho danh sách dữ liệu.
+
+
+📂 Thư mục / File	📝 Chức năng
+app/	Thư mục chính chứa toàn bộ mã nguồn Flask
+app/__init__.py	File khởi tạo ứng dụng Flask
+app/app.py	File chính chạy ứng dụng Flask
+app/config.py	File cấu hình Flask (Database, JWT, Secret Key, ...)
+app/extensions.py	Chứa các phần mở rộng của Flask (SQLAlchemy, JWT, ...)
+app/migrations/	Chứa file migration của database (dùng Flask-Migrate)
+app/models/	Chứa các ORM models của SQLAlchemy
+app/routers/	Chứa API routes sử dụng Flask Blueprint
+app/services/	Chứa logic nghiệp vụ (Business Logic Layer)
+app/utils/	Chứa các hàm tiện ích như hash password, JWT token
+app/templates/	Chứa file HTML nếu sử dụng giao diện Flask
+app/static/	Chứa file CSS, JS, hình ảnh nếu có giao diện
+.env	Chứa các biến môi trường (DATABASE_URI, JWT_SECRET_KEY, ...)
+requirements.txt	Chứa danh sách thư viện cần cài đặt
+tests/	Chứa file kiểm thử (Pytest, Unittest)
+logs/	Chứa file log nếu ứng dụng có tính năng logging
+docker-compose.yml	File Docker Compose (nếu container hóa ứng dụng)
+Dockerfile	File Dockerfile (nếu cần deploy trên container)

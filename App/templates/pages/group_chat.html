@@ -1,0 +1,17 @@
+{% extendes 'base/base.html'%}
+{% block title %}Vynex Chat{% endblock %}
+{% block extra_css %} 
+<link rel="stylesheet" href="{{ url_for('static', filename='css/group.css') }}" />
+{%endblock%}
+{% block extra_js %}
+<script src="{{ url_for('static', filename='js/chat.js') }}"></script>
+{% endblock %}
+{% block content %}
+<h1>Chào mừng đến với Vynex Chat</h1>
+
+<div class="chat-box">
+    <ul id="messages"></ul>
+    <input id="messageInput" type="text" placeholder="Nhập tin nhắn...">
+    <button onclick="sendMessage()">Gửi</button>
+</div>
+{%endblock%}

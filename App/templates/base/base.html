@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}Vynex chat{% endblock %}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/base.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/header.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/footer.css') }}" />
+    {% block extra_css %}{% endblock %}
+  </head>
+  <body>
+    {% include 'base/header.html' %}
+    <main class="main">
+      {% block content %}
+      <!-- main web -->
+      {% endblock%}
+    </main>
+  </body>
+  {% include 'base/footer.html' %} {% block extra_js %}{% endblock %}
+</html>
